@@ -1,0 +1,55 @@
+#malls-section {
+    margin-top: 30px;
+}
+
+#malls-section img {
+    width: 175px;
+    height: 200px;
+    cursor: pointer;
+}
+
+#mall-activities {
+    padding: 15px;
+}
+
+#mall-activities ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 12%;
+    background-color: #f1f1f1;
+    position: absolute;
+    height: auto;
+    overflow: auto;
+    margin-top: 65px;
+    cursor: pointer;
+}
+
+#mall-activities li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+#mall-activities li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#mall-activities li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+#mall-movie,
+#book-movie,
+#mall-food,
+#mall-sports {
+    margin-left: 180px;
+}
+
+.titleName {
+    margin-bottom: 40px;
+}
+

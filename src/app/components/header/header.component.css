@@ -1,0 +1,80 @@
+
+.navbar{
+justify-content: baseline;
+margin-bottom: 0px;
+}
+
+form.form-inline{
+    position: relative;
+    left: 30%;
+}
+
+
+.navbar-brand>img{
+    height: 75px;
+    margin-top: -15px;
+    margin-left: 60px;
+} 
+
+#headerButton{
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-family: monospace;
+    margin-right: 130px;
+    cursor: pointer;
+}
+
+hr{
+    margin-top: 6px;
+    margin-bottom: 10px;
+    margin-left: 75px !important;
+    margin-right: 75px !important;
+}
+
+.dropdown-menu {
+    top: 40px !important;
+    left: -100px !important;
+    font-size: 12px !important;
+    font-family: sans-serif;
+}
+
+/* .dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  } */
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .show {display: block;}

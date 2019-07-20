@@ -1,0 +1,25 @@
+<nav class="navbar navbar-light bg-faded">
+  <a class="navbar-brand" routerLink="/home">
+    <img src="../../../assets/images/crop.jpg" alt="navBrand" />
+    <!-- Movie Management  -->
+
+  </a>
+
+
+  <form class="form-inline my-2 my-lg-0">
+
+    <div class="dropdown">
+      <img src="../../../assets/images/users.svg" id="headerButton" class=" dropdown-toggle" data-toggle="dropdown" alt="UserIcon" />
+      <ul class="dropdown-menu">
+          <li><a>{{userName}}</a></li>
+          <li><a>Manage Account</a></li>
+          <li><a >Your Bookings</a></li>
+          <li><a routerLink = "/">LogOut</a></li>
+        </ul>
+    </div>
+
+  </form>
+
+</nav>
+
+<hr />

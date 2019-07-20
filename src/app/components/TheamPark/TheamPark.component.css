@@ -1,0 +1,11 @@
+#malls-section {
+    margin-top: 30px;
+    margin-left: 60px;
+}
+
+#malls-section img {
+    width: 175px;
+    height: 200px;
+    cursor: pointer;
+}
+

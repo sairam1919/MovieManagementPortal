@@ -1,0 +1,273 @@
+.gateway {
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  margin: 40px;
+}
+
+.brand-logo {
+  width: 110px;
+}
+
+.gateway-body {
+  /* border:1px solid lightgray;
+    border-radius: 4px;
+	    margin: 10px;
+		    width: 1230px;
+    height: 525px; */
+
+}
+
+.gateway-body-head {
+  position: relative;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  background-color: gainsboro;
+  padding: 12px;
+}
+
+.gateway-order {}
+
+.gateway-amount {
+    left: 880px;
+  bottom: 10px;
+  position: absolute;
+
+}
+
+.payment-type-div {
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 35px;
+  width: 210px;
+}
+
+.paymet-type {
+  padding: 10px;
+  border: 1px solid green;
+  background-color: gainsboro;
+  border-radius: 3px;
+  margin-bottom: 1px;
+}
+
+.payment-card-type-logos-div {
+  display: inline-block;
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 35px;
+}
+
+.paymet-type-logo {
+  display: inline-block;
+  width: 47px;
+  height: 25px;
+  border: 1px solid;
+  margin-left: 5px;
+  background: white;
+}
+
+.paymet-type-desc {
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 45px;
+}
+
+.payment-card-save-div {
+  display: inline-block;
+  position: absolute;
+  margin-top: 70px;
+  margin-left: 250px;
+}
+
+.paymet-card-saved,
+.paymet-card-save {
+  display: inline-block;
+  margin-top: 2px;
+  margin-left: 20px;
+  border: 2px solid gray;
+  background: gainsboro;
+  border-radius: 3px;
+  height: 35px;
+  width: 160px;
+  padding: 8px;
+  text-align: center;
+}
+
+.payment-card-div {
+  display: inline-block;
+  position: absolute;
+  margin-top: 130px;
+  margin-left: 230px;
+  border-radius: 10px;
+  width: 475px;
+  background: lightgrey;
+  padding-bottom: 10px;
+}
+
+.payment-card-number-div {
+  margin: 10px;
+  margin-top: 13px;
+  position: relative;
+}
+
+.payment-card-number-input {
+  padding: 8px;
+  width: 413px;
+  border-radius: 6px;
+  margin-left: 10px;
+
+
+}
+
+.payment-card-number-log {
+  width: 42px;
+  position: absolute;
+  right: 40px;
+  top: 4px;
+  border: 1px solid lightgrey;
+  height: 25px;
+}
+
+.payment-card-expdate-div {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.payment-card-expdate-label-div {
+  display: inline-block;
+}
+
+.payment-card-cvv-div {
+  display: inline-block;
+  margin-left: 125px;
+}
+
+.payment-card-expdate {
+  padding: 7px;
+  border-radius: 7px;
+  width: 70px;
+}
+
+.payment-card-cvv-input {
+  padding: 7px;
+  border-radius: 7px;
+  width: 38px;
+}
+
+.cvv-logo {
+  width: 60px;
+  height: 30px;
+  position: absolute;
+  margin-left: 13px;
+  margin-bottom: 20px;
+  padding-bottom: 34px;
+  margin-top: 1px;
+}
+
+.cvv-logo-div {
+  display: inline;
+}
+
+.order-style {
+  font-size: 20px;
+}
+
+.amt-style {
+  font-size: 23px;
+  color: red;
+}
+
+.payment-card-holder-name {
+  padding: 8px;
+  width: 413px;
+  border-radius: 6px;
+  margin-left: 10px;
+}
+
+.payment-card-holder-name-div {
+  margin: 10px;
+}
+
+.patment-card-buttons-div {
+  margin: 21px;
+}
+
+.payment-pay-btn-div {
+  display: inline;
+  margin-right: 15px;
+}
+
+.payment-pay-save-btn-div {
+  display: inline;
+}
+
+.payment-pay-btn {
+  width: 191px;
+  height: 29px;
+  background: #3d4af1;
+  padding: 0px;
+  border-radius: 6px;
+  border: none;
+  color: white;
+  font-size: 15px;
+}
+
+.payment-pay-save-btn {
+  width: 218px;
+  height: 29px;
+  background: #3d4af1;
+  padding: 0px;
+  border-radius: 6px;
+  border: none;
+  color: white;
+  font-size: 15px;
+}
+
+.payment-save-card-disc-div {
+  margin-left: 17px;
+  position: relative;
+}
+
+.payment-save-card-disc {
+  position: absolute;
+  font-style: normal;
+  padding-bottom: 10px;
+}
+
+.payment-save-card-q-div {
+  display: inline;
+}
+
+.quation-mark-logo {
+  width: 18px;
+  margin-left: 278px;
+}
+
+.card-img-div {
+  margin-top: 15%;
+  margin-left: 38%;
+  display: inline-block;
+}
+
+.card-img-logo-1 {
+  width: 15%;
+  margin-bottom: 19%;
+  display: inline-block;
+}
+
+.card-img-logo-2 {
+  width: 15%;
+  margin-bottom: 12%;
+  display: inline-block;
+}
+
+.card-img-logo-3 {
+  width: 15%;
+  margin-bottom: 13%;
+  display: inline-block;
+}
+
+.card-img-logo-4 {
+  width: 15%;
+  margin-bottom: 15%;
+  display: inline-block;
+}

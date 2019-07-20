@@ -1,0 +1,6 @@
+[{
+ "username": "Sairamreddy",
+ "email":"Sairamreddy512@gmail.com",
+ "password":"Sram@225",
+ "bookings": [ {"Movie":""},{"Parking":""} ]
+}]

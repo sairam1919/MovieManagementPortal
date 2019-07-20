@@ -1,0 +1,11 @@
+<div id="malls-section">
+  <div id="malls-list-div">
+    <div class="row">
+      <div class="row">
+        <div class="col col-xs-12 col-sm-6 col-md-4 col-lg-4" (click)="book(list.url)" *ngFor="let list of hotelList">
+          <img src={{list.img}} />
+          <p class="activity-name">{{list.name}}</p>
+        </div>
+      </div>
+    </div>
+  </div>

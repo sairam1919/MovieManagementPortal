@@ -1,0 +1,68 @@
+<app-navigation></app-navigation>
+<app-header></app-header>
+<div class="homepage">
+  <!-- Carousel code -->
+  <div id="demo" class="carousel slide" data-ride="carousel">
+
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="../../../assets/images/RR.jpg" alt="Los Angeles" width="1100" height="500">
+      </div>
+      <div class="carousel-item">
+        <img src="../../../assets/images/MDB.jpg" alt="Chicago" width="1100" height="500">
+      </div>
+      <div class="carousel-item">
+        <img src="../../../assets/images/CR.jpg" alt="New York" width="1100" height="500">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+
+  <!--End of Carousel code -->
+  <form id="searchForm_homepage" class="ng-pristine ng-valid ng-touched">
+    <input class="form-control ng-pristine ng-valid ng-touched" id="searchText" name="forSearch"
+      placeholder="Search Movies..." type="text" ng-reflect-name="forSearch" [(ngModel)]="get_results"
+      (keyup.enter)="getResults(get_results)">
+  </form>
+</div>
+
+
+<div class="container">
+  <div id="movies" class="row">
+
+    <div class="col-md-3" *ngFor="let tit of title">
+      <div class="well text-center">
+        <img src="{{tit.Poster}}" style="width:100%">
+        <h5>{{tit.Title}}</h5>
+        <a class="btn btn-primary" (click) = "movieNavigate(tit.Title)" >Book Tickets</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div id="movies" class="row">
+    <div class="col-md-3" *ngFor="let res of result">
+      <div class="well text-center">
+        <img src="{{res.Poster}}">
+        <h5>{{res.Title}}</h5>
+        <a (click)="movieSelected(res.imdbID)" class="btn btn-primary" routerLink = "/seatSelection" >Book Tickets</a>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,118 @@
+<!-- <div class="container-fluid" id="login">
+  <div class="row">
+
+    <div class="col-md-4 col-md-offset-7 " *ngIf = "!signup">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <span class="glyphicon glyphicon-lock"></span> Login</div>
+        <div class="panel-body">
+          <p id="erromsg" *ngIf="showError">{{response}}</p>
+          <form class="form-horizontal" role="form">
+            <div class="form-group">
+              <label for="inputEmail3" class="col-sm-3 control-label">
+                Email</label>
+              <div class="col-sm-9">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="Email" [(ngModel)]="email"
+                  name="email" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputPassword3" class="col-sm-3 control-label">
+                Password</label>
+              <div class="col-sm-9">
+                <input type="password" class="form-control" id="inputPassword3" placeholder="Password" [(ngModel)]="pwd"
+                  name="pwd" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-offset-3 col-sm-9">
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" />
+                    Remember me
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group last">
+              <div class="col-sm-offset-3 col-sm-9">
+                <button type="submit" class="btn btn-success btn-sm" (click)="validateUser()">
+                  Sign in</button>
+                <button type="reset" class="btn btn-default btn-sm">
+                  Reset</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="panel-footer">
+          <a (click) = "singup()">Not Registred? Register here</a></div>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<div id="container_demo">
+        <a class="hiddenanchor" id="toregister"></a>
+        <a class="hiddenanchor" id="tologin"></a>
+        <div id="wrapper">
+            <div id="login" class="animate form">
+                <form   autocomplete="on"> 
+                    <h1>Log in</h1>
+                    <p *ngIf = "showError">{{response}}</p> 
+                    <p> 
+                        <label for="username" class="uname" data-icon="u" > Your email </label>
+                        <input id="username" name="username" required="required" type="text" [(ngModel)]="email" placeholder="myusername or mymail@mail.com"/>
+                    </p>
+                    <p> 
+                        <label for="password" class="youpasswd" data-icon="p"> Your password </label>
+                        <input id="password" name="password" required="required" type="password" [(ngModel)]="pwd" placeholder="eg. X8df!90EO" /> 
+                    </p>
+                    <p class="keeplogin"> 
+                        <input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping" /> 
+                        <label for="loginkeeping">Keep me logged in</label>
+                    </p>
+                    <p class="login button"> 
+                        <input type="submit" value="Login" (click) = "validateUser()" /> 
+                    </p>
+                    <p class="change_link">
+                        Not a member yet ?
+                        <a href="#toregister" class="to_register">Join us</a>
+                    </p>
+                </form>
+            </div>
+
+            <div id="register" class="animate form">
+                <form   autocomplete="on"> 
+                    <h1> Sign up </h1> 
+                    <p *ngIf = "showError">{{response}}</p>
+                    <p> 
+                        <label for="usernamesignup" class="uname" data-icon="u">Your username</label>
+                        <input id="usernamesignup" name="usernamesignup" required="required" type="text" [(ngModel)]="username" placeholder="mysuperusername690" />
+                    </p>
+                    <p> 
+                        <label for="emailsignup" class="youmail" data-icon="e" > Your email</label>
+                        <input id="emailsignup" name="emailsignup" required="required" type="email"  [(ngModel)]="email" placeholder="mysupermail@mail.com"/> 
+                    </p>
+                    <p> 
+                        <label for="passwordsignup" class="youpasswd" data-icon="p">Your password </label>
+                        <input id="passwordsignup" name="passwordsignup" required="required" type="password"  [(ngModel)]="pwd" placeholder="eg. X8df!90EO"/>
+                    </p>
+                    <p> 
+                        <label for="passwordsignup_confirm" class="youpasswd" data-icon="p">Please confirm your password </label>
+                        <input id="passwordsignup_confirm" name="passwordsignup_confirm" required="required" [(ngModel)]="pwd" type="password" placeholder="eg. X8df!90EO"/>
+                    </p>
+                    <p class="signin button"> 
+                        <input type="submit" value="Sign up" (click) = "userSignUp()"/> 
+                    </p>
+                    <p class="change_link">  
+                        Already a member ?
+                        <a href="#tologin" class="to_register" (click) ="ToLogin()"> Go and log in </a>
+                    </p>
+                </form>
+            </div>
+            
+        </div>
+    </div>  
+
+
+  <router-outlet></router-outlet>

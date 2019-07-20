@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .footer {
+            display: flex !important;
+        }
+        .sub-footer {
+            margin-left: 105px !important;
+        }
+        .container {
+            background-color: whitesmoke !important;
+            border:1px solid lightgray !important;
+            border-radius: 20px !important;
+            box-shadow: 0px 8px 16px !important;
+        }
+        .confirmation{
+            color: green !important;
+             margin-left: 300px;
+             font-size: 20px !important;
+             margin-top: 10px !important;
+        }
+        .BookingID {
+            margin-left: 330px;
+            font-size: 20px !important;
+            margin-top: 20px !important;
+        }
+        .sumamry {
+            border:1px solid lightgray !important;
+            margin-left: 75px !important;
+            margin-right: 75px !important;
+            margin-top: 10px !important;
+        }
+        h3 {
+            text-align: center !important;
+            line-height: 1px;
+            font-family: sans-serif;
+        }
+        span {
+            float:right !important;
+            margin-right: 20px;
+        }
+        strong {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<div class= "container">
+<div class= "logo"></div>
+<div class = "confirmation"><b>Your Booking Confirmed</b></div>
+<div class = "BookingID">Booking ID<strong>{{}}</strong></div>
+<!-- <div class="img">
+    <img src = "./images/1_qFUn9UN2_zsxurIlbYgpOw.png" alt="QR Code">
+</div> -->
+<div class="sumamry">
+    <h3>Order Sumamry</h3>
+    <p><strong>Ticket Amount</strong><span>{{}}</span></p>
+    <p><strong>Quantity</strong><span>{{}}</span></p>
+    <hr>
+   <p><strong>AMOUNT PAID</strong><span>{{}}</span></p> 
+</div>
+<div class ="footer">
+    <div class= "sub-footer">
+        <p>Booking Date & Time</p>
+        <p>{{}}</p>
+    </div>
+    <div class= "sub-footer" >
+        <p>Payment Type</p>
+         <p>Credit card/Debit card</p>
+    </div>
+    <div class= "sub-footer">
+         <p>confirmation#</p>
+         <p>346602</p>
+    </div>
+</div>
+</div>
+</html>

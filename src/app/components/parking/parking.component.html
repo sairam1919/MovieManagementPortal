@@ -1,0 +1,47 @@
+<app-navigation></app-navigation>
+<app-header></app-header>
+
+  <div class="jumbotron" *ngIf = "!showPayment">
+    <h1 class="display-3">Here you can park!</h1>
+    <p class="lead">Dont wait till your last moment!!</p>
+    <hr class="my-4">
+    <p>Now book your parking ticket while you booking your movie ticket.</p>
+    <div class="col-md-12 ">
+      <div class="col-md-3 select">
+        <select id="Mall" #Id="ngModel" class=" hideLabel form-control" [(ngModel)]="MallName" name="Mall"
+          (change)="selectMall();">
+          <option id="dis" selected disabled>MallName</option>
+          <option [ngValue]="k.Mall" *ngFor="let k of parkingData">
+            {{k.Mall}}
+          </option>
+        </select>
+      </div>
+      <div class="col-md-3 select" *ngIf="showType">
+        <select id="Type" #Id="ngModel" class="hideLabel form-control" [(ngModel)]="Type" name="Type"
+          (change)="selectType();">
+          <option id="dis" selected disabled>Vehicle Type</option>
+          <option [ngValue]="k.type" *ngFor="let k of ParkingType">
+            {{k.type}}
+          </option>
+        </select>
+      </div>
+      <div class="col-md-3" *ngIf="showDatePicker">
+        <angular2-date-picker [(ngModel)]="selectedDate" (click)="DateTime()" [settings]="settings">
+        </angular2-date-picker>
+      </div>
+      <div class="col-md-3 confirmButton" *ngIf="showConfirm">
+          <button (click)="buttonClick()" class="button">Confirm Booking</button>
+        </div>
+    </div>
+    <div *ngIf="confirmed">
+      <div class="alert alert-success" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
+            aria-hidden="true">&times;</span></button>
+        {{response}}
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-12" *ngIf="showPayment">
+      <app-payment [outData] = false (getChange) = "onOutput($event)"  ></app-payment>
+    </div>

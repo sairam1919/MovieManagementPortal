@@ -1,0 +1,45 @@
+
+
+<!-- <div class="container">
+  <div class="jumbotron">
+    <h3 class="text-center">Search For Any Movie</h3>
+    <form id="searchForm">
+      <input type="text" class="form-control" id="searchText" placeholder="Search Movies...">
+    </form>
+  </div>
+</div>  -->
+
+
+
+<app-navigation></app-navigation>
+<app-header></app-header>
+
+
+    <div class="container">
+      
+      <div class="jumbotron">
+          <h3 class="text-center">Search For Any Movie</h3>
+          <form id="searchForm" (ngSubmit)="getMovie();"> 
+            <input type="text" name="forSearch" class="form-control" id="searchText" [(ngModel)]="movieName" placeholder="Search Movies...">
+          </form>
+        </div>
+        <h1> Your Search Results are here!! </h1>
+      <div id="movies" class="row" >
+          
+        <div class="col-md-3" *ngFor="let res of result">
+          <div class="well text-center">
+            <img src="{{res.Poster}}">
+            <h5>{{res.Title}}</h5>
+            <a (click)="movieSelected(res.imdbID)" class="btn btn-primary" href="#">Movie Details</a>
+          </div>
+        </div> 
+      </div>
+    </div>
+
+    <!-- <button type="submit" (click)="getMovies('Home')" /> -->
+<!-- 
+<div class="parent-data">
+  Data from parebt view : <b>{{ incomingData }}</b>
+    
+</div> -->
+

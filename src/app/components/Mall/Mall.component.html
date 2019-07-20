@@ -1,0 +1,46 @@
+<div id="malls-section">
+  <div id="malls-list-div" *ngIf="MallNamesList">
+    <div class="row">
+      <div class="col col-xs-12 col-sm-6 col-md-4 col-xl-3" (click)="goToMallActivities()"
+        *ngFor="let list of MallList">
+        <img src={{list.img}} alt="MallImage" />
+        <p>{{list.mallName}}</p>
+      </div>
+    </div>
+  </div>
+  <div id="mall-activities" *ngIf="mallActivites">
+    <ul>
+      <li><a id="movie" class="active" (click)="goToActivitiesInMallMovies()">Movie</a></li>
+      <li><a id="food" (click)="goToActivitiesInMallFood()">Food & Beverage</a></li>
+      <li><a id="game" (click)="goToActivitiesInMallGames()">Games</a></li>
+    </ul>
+
+    <div id="mall-movie" *ngIf="mallMovie">
+      <h2 class="titleName">Movies</h2>
+      <div class="row">
+        <div class="col col-xs-12 col-sm-6 col-md-4 col-xl-3" (click)="bookMovie(list.movieName)" *ngFor="let list of MovieList">
+          <img src={{list.img}} alt="MovieImage" />
+          <p>{{list.movieName}}</p>
+        </div>
+      </div>
+    </div>
+    <div id="mall-food" *ngIf="mallFood">
+      <h2 class="titleName">Food & Beverage</h2>
+      <div class="row" >
+        <div class="col col-xs-12 col-sm-6 col-md-4" (click)="bookTable(list.url)"  *ngFor = "let list of hotelList" >
+            <img src={{list.img}} />
+          <p class="activity-name">{{list.name}}</p>
+        </div>
+      </div>
+    </div>
+    <div id="mall-sports" *ngIf="mallSports">
+      <h2 class="titleName">Sports</h2>
+      <div class="row">
+        <div class="col col-xs-12 col-sm-6 col-md-3" (click)="bookGame(list.url)"  *ngFor = "let list of sportsList">
+                <img src={{list.img}} />
+                <p class="activity-name">{{list.name}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
