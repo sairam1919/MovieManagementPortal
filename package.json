@@ -24,7 +24,7 @@
     "@types/express-serve-static-core": "^4.0.53",
     "angular2-datetimepicker": "^1.1.1",
     "angular2-modal": "^3.0.3",
-    "axios": "^0.17.1",
+    "axios": "^0.21.1",
     "body-parser": "^1.15.2",
     "core-js": "^2.4.1",
     "express": "^4.15.0",
